@@ -22,10 +22,6 @@ export class NavComponent {
       next: (v) => {
         this.router.navigateByUrl('/members').then((r) => r.valueOf());
       },
-      error: (e) => {
-        console.log(e);
-        this.toastr.error(e.error);
-      },
     });
   }
 
